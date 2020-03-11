@@ -1,0 +1,73 @@
+.card-rotor {
+  position: relative;
+  width: 330px;
+  height: 350px;
+  top: 100px;
+  margin: 0px auto;
+}
+.card-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  z-index: 1;
+}
+
+.card {
+  width: 192px;
+  height: 267px;
+  border-radius: 10px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  position: absolute;  
+  bottom: 10px;
+}
+.forward .card {
+  right: 50%; 
+  transform: rotate(35deg);
+  transform-origin: 100% 100%;
+  background: aquamarine;
+}
+.backward .card {
+  left: 50%;
+  transform: rotate(-35deg);
+  transform-origin: 0% 100%;
+  background: brown;
+}
+.card .mark {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  text-align: center;
+  font-size: 100px;
+  /* color: #dd0; */
+}
+.shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.crown {
+  width: 90px;
+  height: 90px;
+  margin: 0px auto;
+}
+.crown:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}

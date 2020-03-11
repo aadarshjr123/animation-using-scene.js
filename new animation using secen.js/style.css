@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+
 .card-rotor {
   position: relative;
   width: 330px;
@@ -70,4 +74,89 @@
   width: 100%;
   left: 0;
   bottom: 0;
+}
+
+
+
+/* txt */
+
+
+
+body {
+	background: #fff;
+	color: #262c2e;
+	margin: 0;
+	padding: 0;
+}
+
+.banner {
+	display: block;
+	min-height: 200px;
+  width: 100%;
+  top: 170px;
+	position: relative;
+}
+.typed_wrap {
+	display: block;
+  background: aquamarine;
+	border: 4px solid;
+	width: 290px;
+	height: auto;
+	padding: 30px;
+
+
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.typed_wrap h1 span{
+	color: brown;
+	font-family: 'Spartan', sans-serif;
+	size: 10px;
+	letter-spacing: 10px;
+	
+}
+
+.typed_wrap h1 {
+	display: inline;
+	font-family: 'Trade Winds', cursive;
+	size: 20px;
+}
+
+
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

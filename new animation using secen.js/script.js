@@ -35,3 +35,35 @@ new Scene({
   selector: true,
   iterationCount: "infinite",
 }).playCSS();
+
+
+// next
+
+var options = {
+  strings: [' <strong> Joker</strong>.', ' <b>Queen</b>.'],
+  typeSpeed: 40,
+
+  startDelay:1200,
+  
+  backSpeed:20,
+  
+  smartBackspace: false,
+  
+  loop:true,
+  
+  loopCount:5,
+
+  showCursor: false,
+  
+  cursorChar: "|",
+
+  attr: null,
+
+  backDelay:500,
+
+  
+
+  
+};
+
+var typed = new Typed('.type', options);
